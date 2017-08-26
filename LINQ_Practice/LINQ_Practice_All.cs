@@ -37,7 +37,7 @@ namespace LINQ_Practice
         [TestMethod]
         public void DoAllCohortsFiveStudents()
         {
-            var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
+            var doAll = PracticeData.All(cohort => cohort.JuniorInstructors.Count() == 5);
             Assert.IsTrue(false); //<-- change false to doAll
         }
 
